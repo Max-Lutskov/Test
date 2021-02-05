@@ -556,7 +556,6 @@ h1{
 
 
 
-
   .header__burger{
     display: block;
     position: relative;
@@ -605,6 +604,7 @@ h1{
     display: flex;
     justify-content: center;
     transition: all 0.3s ease 0s;
+    z-index: 2;
 
 
   }
