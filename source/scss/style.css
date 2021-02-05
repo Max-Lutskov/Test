@@ -1,0 +1,709 @@
+@charset "UTF-8";
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("//db.onlinewebfonts.com/c/2596224269750e00c3ad5356299a3b9f?family=Ogg");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "TradeGothic-BoldExt";
+  src: url("../../fonts/TradeGothicLTStd-BoldExt.eot");
+  src: local("☺"), url("../../fonts/TradeGothicLTStd-BoldExt.woff") format("woff"), url("../../fonts/TradeGothicLTStd-BoldExt.ttf") format("truetype"), url("../../fonts/TradeGothicLTStd-BoldExt.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TradeGothic-Extended";
+  src: url("../../fonts/Trade Gothic LT Std Extended.eot");
+  src: local("☺"), url("../../fonts/Trade Gothic LT Std Extended.woff") format("woff"), url("../../fonts/Trade Gothic LT Std Extended.ttf") format("truetype"), url("../../fonts/Trade Gothic LT Std Extended.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ogg";
+  src: url("//db.onlinewebfonts.com/t/2596224269750e00c3ad5356299a3b9f.eot");
+  src: url("//db.onlinewebfonts.com/t/2596224269750e00c3ad5356299a3b9f.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2596224269750e00c3ad5356299a3b9f.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2596224269750e00c3ad5356299a3b9f.woff") format("woff"), url("//db.onlinewebfonts.com/t/2596224269750e00c3ad5356299a3b9f.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2596224269750e00c3ad5356299a3b9f.svg#Ogg") format("svg");
+}
+.body {
+  font-family: "trade-gothic-lt-std-extended", sans-serif;
+}
+
+.container {
+  max-width: 1054px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: Ogg, sans-serif;
+}
+
+.title {
+  font-family: Ogg, sans-serif;
+}
+
+.info-line {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px 0;
+  font-family: "trade-gothic-lt-std-extended", sans-serif;
+}
+
+.header {
+  margin: 0 0 42px 0;
+}
+.header .icon-row__list {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0 0 0;
+}
+.header .icon-row__list a {
+  margin-right: 9px;
+}
+.header .icon-row__list .icon1 {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: #fff url("../../img/icon/icon_search.png") center/100% no-repeat;
+}
+.header .icon-row__list .icon2 {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: #fff url("../../img/icon/icon__basket.png") center/100% no-repeat;
+}
+.header .icon-row__list .icon3 {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background: #fff url("../../img/icon/icon__likes.png") center/100% no-repeat;
+}
+.header__logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header .menu-header {
+  padding: 0 58px;
+}
+.header .menu-header__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header .menu-header__list li {
+  position: relative;
+}
+.header .menu-header__list a {
+  width: 104px;
+  height: 13px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "TradeGothic-BoldExt", sans-serif;
+  font-weight: bold;
+}
+.header .menu-header__list li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #f4bab5;
+}
+.header .menu-header__list a:hover:after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.banner {
+  background: #000;
+}
+.banner__title {
+  padding: 40px 0 0 0;
+  color: #ffffff;
+  font-family: "Ogg - Roman", sans-serif;
+  font-size: 61px;
+  font-weight: 400;
+  text-align: center;
+}
+.banner__text {
+  padding: 27px 0 47px 0;
+  max-width: 610px;
+  margin: 0 auto;
+  color: #515151;
+  font-family: "Trade Gothic LT Std - Extended", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.slider__title {
+  background: url("../../img/star-bg.png") center/cover no-repeat;
+  top: 0;
+  right: 0;
+}
+.slider__subtitle {
+  padding: 61px 0 43px 0;
+  color: #000000;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+}
+.slider .owl-carousel {
+  background: #f4bab5;
+}
+.slider .owl-carousel__body {
+  display: flex;
+}
+.slider .owl-carousel .photo-body-owl-carousel {
+  padding: 75px 0 75px 42px;
+  text-align: center;
+}
+.slider .owl-carousel .photo-body-owl-carousel__image {
+  margin: 0 0 30px 0;
+}
+.slider .owl-carousel .photo-body-owl-carousel__subtitle {
+  display: inline-block;
+  padding: 5px 13px;
+  color: #000000;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+.slider .owl-carousel .photo-body-owl-carousel__subtitle::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b3f695;
+  align-items: center;
+  margin-right: 13px;
+}
+.slider .owl-carousel .photo-body-owl-carousel .adaptive {
+  display: none;
+}
+.slider .owl-carousel .photo-body-owl-carousel .adaptive-subtitle {
+  display: none;
+}
+.slider .owl-carousel .text-body-owl-carousel {
+  padding: 110px 0 90px 63px;
+  max-width: 670px;
+}
+.slider .owl-carousel .text-body-owl-carousel__h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+.slider .owl-carousel .text-body-owl-carousel__h2 {
+  font-size: 61px;
+  font-weight: 400;
+  line-height: 63px;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.slider .owl-carousel .text-body-owl-carousel__text {
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.slider .owl-carousel .text-body-owl-carousel a {
+  color: black;
+}
+.slider .owl-carousel .text-body-owl-carousel__btn {
+  display: block;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  padding: 7px;
+  width: 150px;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+.slider .owl-carousel .text-body-owl-carousel__btn:hover {
+  background: #000;
+  color: white;
+}
+.slider .owl-carousel .text-body-owl-carousel__btn a:hover {
+  color: white;
+}
+
+.owl-carousel span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #f4bab5 !important;
+  display: block;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+
+.owl-carousel .active span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #000000 !important;
+  display: block;
+  border-radius: 30px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+}
+.card__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: 3;
+}
+.card h3 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+  text-align: center;
+}
+
+.footer {
+  padding: 80px 0;
+  background-color: #f2f2f2;
+}
+.footer__icon {
+  display: none;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer .menu-row {
+  display: flex;
+}
+
+.form-footer {
+  display: block;
+  max-width: 300px;
+}
+.form-footer__text {
+  font-family: "TradeGothic-BoldExt", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 17px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.column-footer {
+  padding-left: 40px;
+}
+.column-footer__title {
+  margin: 0 0 15px 0;
+  font-family: "TradeGothic-BoldExt", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+.column-footer__list .active {
+  display: none;
+}
+.column-footer__list li {
+  padding-bottom: 8px;
+}
+.column-footer__list a {
+  /* Style for "FIND US" */
+  width: 79px;
+  height: 50px;
+  color: #000000;
+  font-family: "TradeGothic-BoldExt", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.form form {
+  position: relative;
+}
+.form input {
+  display: block;
+  background: #f2f2f2;
+  border-bottom: 2px solid #000;
+  padding: 3px 0;
+  width: 100%;
+}
+.form button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #858585;
+}
+.form button:focus {
+  outline: none;
+}
+
+@media (max-width: 1018px) {
+  .card__list {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: 3;
+  }
+
+  .card-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-footer {
+    padding-left: 40px;
+  }
+
+  .owl-carousel span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #f4bab5 !important;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 30px;
+  }
+
+  .owl-carousel .active span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: #000000 !important;
+    display: block;
+    border-radius: 30px;
+  }
+
+  .slider .owl-carousel .photo-body-owl-carousel {
+    padding: 10px 0;
+  }
+  .slider .owl-carousel .text-body-owl-carousel {
+    padding: 10px 0;
+    max-width: 350px;
+  }
+  .slider .owl-carousel .text-body-owl-carousel__btn {
+    background: #000;
+  }
+  .slider .owl-carousel .text-body-owl-carousel a {
+    color: white;
+  }
+}
+@media (max-width: 768px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    margin: -20px 10px 0 20px;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #000;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 10px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger:before, .header__burger:after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger:before {
+    top: 0;
+  }
+
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__menu.active {
+    top: 0;
+  }
+  .header__menu.active a {
+    color: white;
+  }
+
+  .menu-header__list {
+    padding: 50px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-header__list li {
+    margin-bottom: 22px;
+  }
+
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+    background: #fff;
+  }
+
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    background: #fff;
+  }
+
+  .header__burger.active span {
+    transform: scale(0);
+    background: #fff;
+  }
+
+  .footer__row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: left;
+  }
+  .footer .form-footer {
+    padding: 0 0 20px 0;
+  }
+}
+@media (max-width: 576px) {
+  .info-line p {
+    max-width: 150px;
+    margin: 0 auto;
+    font-size: 8px;
+    opacity: 0.5;
+  }
+
+  .banner h1 {
+    font-size: 25px;
+  }
+  .banner span {
+    display: none;
+  }
+  .banner__text {
+    font-size: 16px;
+  }
+
+  .slider__subtitle {
+    font-size: 25px;
+    padding: 56px 0 35px 0;
+  }
+  .slider__title {
+    background: url("../../img/bg-adaptiv.png") 10px 20px no-repeat;
+    background-size: auto;
+  }
+  .slider .text-body-owl-carousel__btn a {
+    color: white;
+  }
+
+  .card .card-image .title {
+    font-size: 17px;
+  }
+
+  .form-footer {
+    margin: 0 auto;
+  }
+
+  .footer {
+    padding: 34px 0;
+  }
+  .footer__icon {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .footer__icon a {
+    padding-right: 10px;
+    color: black;
+  }
+  .footer .container {
+    padding: 0 0;
+  }
+
+  .menu-row {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu-row .column-footer {
+    padding: 0;
+    display: block;
+    justify-content: flex-start;
+  }
+  .menu-row ul:last-child {
+    display: none;
+  }
+  .menu-row .column-footer__title:last-child {
+    display: none;
+  }
+  .menu-row li:last-child {
+    padding: 0 0 20px 0;
+  }
+  .menu-row .column__none {
+    display: none;
+  }
+  .menu-row .column-footer__title {
+    display: block;
+    position: relative;
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 100%;
+  }
+  .menu-row__content {
+    display: none;
+  }
+
+  .slider .owl-carousel__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider .owl-carousel .text-body-owl-carousel h3, .slider .owl-carousel .text-body-owl-carousel h2 {
+    display: none;
+  }
+  .slider .owl-carousel .photo-body-owl-carousel {
+    display: block;
+    justify-content: center;
+  }
+  .slider .owl-carousel .photo-body-owl-carousel__image {
+    margin: 0 0 30px 0;
+    width: 50%;
+    transform: translateX(50%);
+    height: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  .slider .owl-carousel .photo-body-owl-carousel img {
+    display: block;
+    justify-content: center;
+    max-width: 100%;
+  }
+  .slider .owl-carousel .photo-body-owl-carousel .adaptive {
+    display: block;
+    font-family: "TradeGothic-BoldExt", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 16px 0;
+  }
+  .slider .owl-carousel .photo-body-owl-carousel .adaptive-subtitle {
+    display: block;
+    font-family: "ogg", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 16px 0;
+  }
+}
